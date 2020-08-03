@@ -64,11 +64,8 @@
 #'    "Biomass" returns numeric value of total weight
 #'    of harvested biomass.
 #'
-#'    "all" saves output to disk and returns content of "Calculation"
-#'    sheet.
-#'
-#'    "allPlots" saves output containing all plots to disk and
-#'    returns content of "Calculation" sheet.
+#'    "all" saves output to disk (file name given in outName)
+#'    and returns content of "Calculation" sheet.
 #'
 #' @param wb Workbook object from package "xlsx" containing the Lingra-n excel
 #'     model. Mostly for internal usage.
@@ -79,6 +76,10 @@
 #' @param weightCut Logical. If FALSE (default) "h" must specify harvest dates.
 #'    If TRUE, "h" must specify the biomass threshold at which
 #'    harvesting occurs.
+#'    
+#' @param outName Character. The name of the output file if required.
+#'    File extention must be ".xlsx".
+#'    Defaults to "LingraOut.xlsx".
 #'
 #' @details
 #' Lingranr() feeds into LINGRA-N Tool the required input variables,
@@ -121,16 +122,19 @@
 #'
 
 Lingranr <- function(w, s, h, f, lat, alt,
-                     return = 'GRASS', wb = NULL, weightCut = FALSE,
+                     return = 'GRASS',
+                     wb = NULL,
+                     weightCut = FALSE,
                      waterStress = TRUE,
-                     nitrogenStress = TRUE){
+                     nitrogenStress = TRUE,
+                     outName = "LingraOut"){
 
 
 
   # Overall processing time counter
   sto <- Sys.time()
 
-  # Increas Java's heap space to 2GB (necessary to handle bug excel files)
+  # Increas Java's heap space to 2GB (necessary to handle big excel files)
   # This needs executing before requiring rJava (xslx dependency) !!!
   if(is.null(wb)){ # if xlsx is not loaded yet
     options(java.parameters = "-Xmx2048m")
@@ -151,11 +155,10 @@ Lingranr <- function(w, s, h, f, lat, alt,
     cat('\n  Loading algorithm')
     st1 <- Sys.time()
 
-    if(return == 'all'){
-      wb <- loadWorkbook('LINGRA-N-Plus-413.xlsx')
-    } else if(return == 'allPlots'){
-      wb <- loadWorkbook('LINGRA-N-Plus-413-with-plots.xlsx')
-    }
+    wb <- loadWorkbook(system.file("extdata",
+                                   "LINGRA-N-Plus-413.xlsx",
+                                   package = "LingraNR",
+                                   mustWork = TRUE))
 
     cat(' >> ', round(Sys.time() - st1, 1), ' sec \n')
   }
@@ -289,9 +292,10 @@ Lingranr <- function(w, s, h, f, lat, alt,
 
   if(return == 'all' | return == 'allPlots'){ # if write to disk is required
 
-    cat('  Saving outputs to "LINGRA-N-Plus-413-OUT.xlsx"')
+    outName <- gsub("\\.", "", outName)
+    cat('  Saving outputs to "', paste0(outName, '.xlsx'), '"', sep ="")
     st1 <- Sys.time()
-    saveWorkbook(wb, file = 'LINGRA-N-Plus-413-OUT.xlsx')
+    saveWorkbook(wb, file = paste0(outName, '.xlsx'))
     cat(' >> ', round(Sys.time() - st1, 1), ' sec \n')
 
   } else if (return == 'GRASS'){ # if yield value only is required
@@ -312,12 +316,12 @@ Lingranr <- function(w, s, h, f, lat, alt,
 
 
   # Read "Calculations" sheet of output excel file back in
-  if (return == 'all' | return == 'allPlots'){
+  if (return == 'all'){
     cat('  Reload as R object')
     st1 <- Sys.time()
     suppressWarnings({
 
-      out <- readxl::read_xlsx('LINGRA-N-Plus-413-OUT.xlsx',
+      out <- readxl::read_xlsx(paste0(outName, '.xlsx'),
                                sheet = 'Calculations',
                                col_names = T,
                                col_types = 'numeric',
