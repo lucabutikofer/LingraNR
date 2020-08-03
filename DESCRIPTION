@@ -1,0 +1,18 @@
+Package: LingraNR
+Type: Package
+Title: R Interface to LINGRA-N Tool
+Version: 0.1.0
+Author: Luca Butikofer
+Maintainer: Luca Butikofer <lucabutikofer@gmail.com>
+Description: Functions to run LINGRA-N Tool, crop growth model for grassland
+    productivity, plot results and run the grassland
+    productivity meta-model described in Qi et al. 2018.
+License: EUPD (>= 1.1)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
+Imports:
+    xlsx (>= 0.6.3),
+    XLConnect (>= 1.0.1)
