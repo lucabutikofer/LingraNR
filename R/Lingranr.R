@@ -77,6 +77,10 @@
 #'    If TRUE, "h" must specify the biomass threshold at which
 #'    harvesting occurs.
 #'    
+#' @param waterStress Logical. Do you want to model water stress?
+#' 
+#' @param nitrogenStress Logical. Do you want to model nitrogen stress?
+#'    
 #' @param outName Character. The name of the output file if required.
 #'    File extention must be ".xlsx".
 #'    Defaults to "LingraOut.xlsx".

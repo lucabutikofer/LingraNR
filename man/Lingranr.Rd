@@ -15,7 +15,8 @@ Lingranr(
   wb = NULL,
   weightCut = FALSE,
   waterStress = TRUE,
-  nitrogenStress = TRUE
+  nitrogenStress = TRUE,
+  outName = "LingraOut"
 )
 }
 \arguments{
@@ -77,11 +78,8 @@ mineral nitrogen}
    "Biomass" returns numeric value of total weight
    of harvested biomass.
 
-   "all" saves output to disk and returns content of "Calculation"
-   sheet.
-
-   "allPlots" saves output containing all plots to disk and
-   returns content of "Calculation" sheet.}
+   "all" saves output to disk (file name given in outName)
+   and returns content of "Calculation" sheet.}
 
 \item{wb}{Workbook object from package "xlsx" containing the Lingra-n excel
 model. Mostly for internal usage.
@@ -92,6 +90,14 @@ outside of this function.}
 \item{weightCut}{Logical. If FALSE (default) "h" must specify harvest dates.
 If TRUE, "h" must specify the biomass threshold at which
 harvesting occurs.}
+
+\item{waterStress}{Logical. Do you want to model water stress?}
+
+\item{nitrogenStress}{Logical. Do you want to model nitrogen stress?}
+
+\item{outName}{Character. The name of the output file if required.
+File extention must be ".xlsx".
+Defaults to "LingraOut.xlsx".}
 }
 \value{
 A data frame of "tbl_df" class (a tibble, see ?tbl_df for details)
