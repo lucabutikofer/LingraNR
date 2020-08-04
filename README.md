@@ -12,3 +12,9 @@ devtools::install_github('lucabutikofer/LingraNR')
 ***
 ### Documentation
 
+<sup>[1](#footn1)</sup>
+
+
+
+#### Bibliography
+<a name="footn1">1</a>: Qi et al. Footnote content goes heresdfgsdfgh.
