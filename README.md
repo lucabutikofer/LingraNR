@@ -1,5 +1,5 @@
 # LingraNR
-R Interface to [LINGRA-N Tool](https://widgets.figshare.com/articles/11359613/embed?show_title=1), grassland productivity model and functions to implement the grassland productivity metamodel of Qi at al.<sup>[1](#foot1)</sup><sup>[2](#foot1)</sup>.
+R Interface to [LINGRA-N Tool](https://widgets.figshare.com/articles/11359613/embed?show_title=1), grassland productivity model and functions to implement the grassland productivity metamodel of Qi <i>at al.</i><sup>[1](#foot1)</sup><sup>[2](#foot1)</sup>.
 
 ***
 ### Installation
