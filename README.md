@@ -1,5 +1,5 @@
 # LingraNR
-R Interface to [LINGRA-N Tool](https://widgets.figshare.com/articles/11359613/embed?show_title=1), grassland productivity model and functions to implement the grassland productivity metamodel of Qi <i>at al.</i> (2017 & 2018)<sup>[1](#foot1)</sup><sup>[2](#foot1)</sup>.
+R Interface to [LINGRA-N Tool](https://widgets.figshare.com/articles/11359613/embed?show_title=1), grassland productivity model and functions to implement the grassland productivity metamodel of Qi <i>at al.</i> (2017 & 2018)<sup>[1](#foot1)</sup>,<sup>[2](#foot1)</sup>.
 
 ***
 ### Installation
@@ -29,7 +29,11 @@ sdfasdfasdf asdfas as afsd.
 
 
 #### Bibliography
+
 <a name="footn1">1</a>: Qi, A., Murray, P. J. & Richter, G. M. Modelling productivity and resource use efficiency for grassland ecosystems in the UK. European Journal of Agronomy 89, 148–158 (2017).
-<a name="footn2>2</a>: Qi, A., Holland, R. A., Taylor, G. & Richter, G. M. Grassland futures in Great Britain – Productivity assessment and scenarios for land use change opportunities. Science of The Total Environment 634, 1108–1118 (2018).
-<a name="footn3>3</a>: Wolf J. LINGRA-N: Simple generic model for simulation of grass growth under potential,
-water limited and N limited conditions. (2012) https://models.pps.wur.nl/lingra-n-grassland-model-potential-water-limited-and-n-limited-conditions-fortran
+
+<a name="footn2">2</a>: Qi, A., Holland, R. A., Taylor, G. & Richter, G. M. Grassland futures in Great Britain – Productivity assessment and scenarios for land use change opportunities. Science of The Total Environment 634, 1108–1118 (2018).
+
+<a name="footn3">3</a>: Wolf J. LINGRA-N: Simple generic model for simulation of grass growth under potential,
+water limited and N limited conditions. (2012) https://models.pps.wur.nl/lingra-n-grassland-model-potential-water-limited-and-n-limited-conditions-fortran .
+
