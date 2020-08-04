@@ -1,5 +1,5 @@
 # LingraNR
-R Interface to [LINGRA-N Tool](https://widgets.figshare.com/articles/11359613/embed?show_title=1), grassland productivity model and functions to implement the grassland productivity metamodel of Qi <i>at al. (2017, 2018)</i><sup>[1](#foot1)</sup><sup>[2](#foot1)</sup>.
+R Interface to [LINGRA-N Tool](https://widgets.figshare.com/articles/11359613/embed?show_title=1), grassland productivity model and functions to implement the grassland productivity metamodel of Qi <i>at al.</i> (2017 & 2018)<sup>[1](#foot1)</sup><sup>[2](#foot1)</sup>.
 
 ***
 ### Installation
@@ -17,7 +17,16 @@ The background document and detailed information about LINGRA-N and its FORTRAN 
 
 This package is an R wrapper for the LINGRA-N Tool, allowing the model to be ran entirely without leaving the R environment. LINGRA-N computations are carried out internally to the Excel Workbook via the xlsx R package (Java based), while LingraNR manages inputs and outputs, and provides functions to display the model's results.
 
-Additionally, functions to run the grassland productivity metamodel of Qi <i>at al. (2017, 2018)</i><sup>[1](#foot1)</sup><sup>[2](#foot1)</sup> for the UK are also provided.
+Additionally, functions to run the grassland productivity metamodel of Qi <i>at al.</i> (2017 & 2018)<sup>[1](#foot1)</sup><sup>[2](#foot1)</sup> for the UK are also provided.
+
+#### Running LINGRA-N
+
+sdfasdfasdf asdfas as afsd.
+
+#### Running Qi <i>et al.</i>'s metamodel
+
+sdfasdfasdf asdfas as afsd.
+
 
 #### Bibliography
 <a name="footn1">1</a>: Qi, A., Murray, P. J. & Richter, G. M. Modelling productivity and resource use efficiency for grassland ecosystems in the UK. European Journal of Agronomy 89, 148–158 (2017).
