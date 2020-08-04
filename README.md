@@ -3,8 +3,6 @@ R Interface to [LINGRA-N Tool](https://widgets.figshare.com/articles/11359613/em
 
 ***
 ### Installation
-
-Install with:
 ```R
 devtools::install_github('lucabutikofer/LingraNR')
 ```
