@@ -25,22 +25,22 @@ LINGRA-N simulations are carried out by function Lingranr(). This requires infor
 ##### Weather
 Weather data is to be provided in daily time steps and must contain information on:
 
-  *Total solar radiation [MJ/m2*day]
-  *Minimum daily tempterature ['C]
-  *Maximum daily tempterature ['C]
-  *Vapour pressure [kPa]
-  *Mean daily wind speed [m/s]
-  *Total daily rainfall [mm]
+  * Total solar radiation [MJ/m2*day]
+  * Minimum daily tempterature ['C]
+  * Maximum daily tempterature ['C]
+  * Vapour pressure [kPa]
+  * Mean daily wind speed [m/s]
+  * Total daily rainfall [mm]
 
 Additionally, date and location information are added to the weather input table. See `?Lingranr` for details and `weatherExmpl` for and example.
 
 ##### Soil
 Soil information is to be provided for each location and must contain:
 
-  *Soil depth [mm]
-  *Moisture content at field capacity [mm3/mm3]
-  *Moisture content at saturation [mm3/mm3]
-  *Moisture content at wilting point [mm3/mm3]
+  * Soil depth [mm]
+  * Moisture content at field capacity [mm3/mm3]
+  * Moisture content at saturation [mm3/mm3]
+  * Moisture content at wilting point [mm3/mm3]
 
 #### Running Qi <i>et al.</i>'s metamodel
 
