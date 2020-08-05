@@ -48,6 +48,8 @@ See `?Lingranr` for details and `soilExmpl` for and example.
 Management information is to be provided as two separate objects specifying harvest dates and fetilisation dates with fertilisation amounts in equivalent mineral nitrogen.
 See `?Lingranr` for details and `harvestExmpl; fertilisExmpl` for examples.
 
+
+
 #### Running Qi <i>et al.</i>'s metamodel
 
 sdfasdfasdf asdfas as afsd.
