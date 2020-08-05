@@ -74,7 +74,9 @@ plotn(lo)
 
 #### Running Qi <i>et al.</i>'s metamodel
 
-sdfasdfasdf asdfas as afsd.
+The metamodel is run with three independent functions for permanent (`pg()`), temporary (`tg()`) and semi-natural (rough grazing, `rg()`) grassland. See `?metamodel` for details. The metamodel uses seasonal weather data and only requires additional information on the soils' available water content.
+
+Additionally, a yield modifyer function (`Nchange()`) is available to correct the metamodel's output whenever precise information on nitrogen fertilisation is available. For details about the metamodelmodel see Qi <i>at al.</i> (2017 & 2018)<sup>[1](#foot1),[2](#foot1)</sup>.
 
 
 #### Bibliography
