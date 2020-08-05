@@ -87,4 +87,4 @@ water limited and N limited conditions. (2012) https://models.pps.wur.nl/lingra-
 
 
 
-[lingraOutput1]: "man/figures/LingranrOutput.png" "Output of Lingranr function"
+[lingraOutput1]: https://github.com/lucabutikofer/LingraNR/blob/master/man/figures/LingranrOutput.png "Output of Lingranr function"
