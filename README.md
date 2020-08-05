@@ -50,7 +50,7 @@ See `?Lingranr` for details and `soilExmpl` for and example.
 Management information is to be provided as two separate objects specifying harvest dates and fetilisation dates with fertilisation amounts in equivalent mineral nitrogen.
 See `?Lingranr` for details and `harvestExmpl; fertilisExmpl` for examples.
 
-To run LINGRA-N with example data:
+To run LINGRA-N with example data and plot the model outputs:
 
 ```R
 # Run model:
@@ -68,8 +68,8 @@ plotw(weatherExmpl[1:365,])
 plotdm(lo)
 plotn(lo)
 ```
-Reference-style: 
-![alt text][ligraOutput1]
+![alt text][lingraOutpu1]
+
 
 #### Running Qi <i>et al.</i>'s metamodel
 
@@ -85,6 +85,4 @@ sdfasdfasdf asdfas as afsd.
 <a name="footn3">3</a>: Wolf J. LINGRA-N: Simple generic model for simulation of grass growth under potential,
 water limited and N limited conditions. (2012) https://models.pps.wur.nl/lingra-n-grassland-model-potential-water-limited-and-n-limited-conditions-fortran .
 
-
-
-[lingraOutput1]: https://github.com/lucabutikofer/LingraNR/blob/master/man/figures/LingranrOutput.png "Output of Lingranr function"
+[lingraOutpu1]: https://github.com/lucabutikofer/LingraNR/blob/master/man/figures/LingranrOutput.png "Output of Lingranr function"
