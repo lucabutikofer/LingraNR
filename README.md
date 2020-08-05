@@ -26,8 +26,8 @@ LINGRA-N simulations are carried out by function Lingranr(). This requires infor
 Weather data is to be provided in daily time steps and must contain information on:
 
   * Total solar radiation [MJ/m2*day]
-  * Minimum daily tempterature ['C]
-  * Maximum daily tempterature ['C]
+  * Minimum daily tempterature [°C]
+  * Maximum daily tempterature [°C]
   * Vapour pressure [kPa]
   * Mean daily wind speed [m/s]
   * Total daily rainfall [mm]
@@ -41,6 +41,12 @@ Soil information is to be provided for each location and must contain:
   * Moisture content at field capacity [mm3/mm3]
   * Moisture content at saturation [mm3/mm3]
   * Moisture content at wilting point [mm3/mm3]
+
+See `?Lingranr` for details and `soilExmpl` for and example.
+
+##### Management
+Management information is to be provided as two separate objects specifying harvest dates and fetilisation dates with fertilisation amounts in equivalent mineral nitrogen.
+See `?Lingranr` for details and `harvestExmpl; fertilisExmpl` for examples.
 
 #### Running Qi <i>et al.</i>'s metamodel
 
