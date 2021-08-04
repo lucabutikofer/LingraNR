@@ -11,4 +11,4 @@ devtools::install_github('lucabutikofer/LingraNR')
 
 ***
 ### Documentation
-A tutorial is available [HERE](https://lucabutikofer.github.io/LingraNR) or as R vingette (accessible with R command `browseVignettes('WofostR')`).
+A tutorial is available [HERE](https://lucabutikofer.github.io/LingraNR).
