@@ -12,7 +12,7 @@
 #'
 #'    "DOY": julian day
 #'
-#'    "RAD": total solar radiation [MJ/m2*day]
+#'    "RAD": total solar radiation [kJ/m2*day]
 #'
 #'    "MINTMP": minimum daily tempterature [°C]
 #'

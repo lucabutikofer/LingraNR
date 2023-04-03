@@ -26,11 +26,11 @@ Lingranr(
 
    "DOY": julian day
 
-   "RAD": total solar radiation [MJ/m2*day]
+   "RAD": total solar radiation [kJ/m2*day]
 
-   "MINTMP": minimum daily tempterature ['C]
+   "MINTMP": minimum daily tempterature [°C]
 
-   "MAXTMP": maximum daily tempterature ['C]
+   "MAXTMP": maximum daily tempterature [°C]
 
    "VP": vapour pressure [kPa]
 
@@ -44,13 +44,13 @@ Lingranr(
 
 \item{s}{Dataframe containing soil data. Column names must be:
 
-   "sdpt": soil depth
+   "sdpt": soil depth [mm]
 
-   "mcfc": moisture content at field capacity
+   "mcfc": moisture content at field capacity [mm3/mm3]
 
-   "mcsat": moisture content at saturation
+   "mcsat": moisture content at saturation [mm3/mm3]
 
-   "mcwp": moisture content at wilting point}
+   "mcwp": moisture content at wilting point [mm3/mm3]}
 
 \item{h}{Either numeric vector of harvest dates in Julian days with
 maximum 11 entries or, if weightCut == T, numeric value of dry
